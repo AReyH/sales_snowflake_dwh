@@ -1,0 +1,20 @@
+version: 1
+
+models:
+  - name: dim_customers
+    description: "This table contains customer data"
+    columns:
+      - name: customer_id
+        description: "Primary key for the customers table"
+        tests:
+          - unique
+          - not_null
+  - name: dim_products
+    description: "This table contains customer data"
+    columns:
+      - name: product_id
+        description: "Primary key for the customers table"
+        tests:
+          - unique
+          - not_null
+
