@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: sales_data
+    database: sales
+    schema: raw
+    tables:
+      - name: rawsales
+        columns:
+          - name: sale_id
+            tests:
+              - unique
+              - not_null
