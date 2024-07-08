@@ -1,0 +1,13 @@
+models:
+  - name: fct_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_sales')
+              field: sale_id
+              severity: warn
+          - test_int_data_type:
+              column_name: order_id
+          
