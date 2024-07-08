@@ -22,5 +22,5 @@ create schema sales.mock;
 create schema sales.raw;
 ```
 
-I created the mock data running [`data.py`](src/data.py). This output the `sales.csv` file. I uploaded this file into Snowflake and loaded it into the schema sales.raw.
+I created the mock data running [`data.py`](src/data.py). This output the `sales .csv` file. I uploaded this file into Snowflake and loaded it into the schema sales.raw.
 
